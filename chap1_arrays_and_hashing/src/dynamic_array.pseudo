@@ -1,0 +1,94 @@
+Class Dynamic_Array
+
+  Attributes
+    array <- new array of ints of size 1 
+    size <- 0 // Number of elements currently stored
+    capacity <- 1 // Current capacity of the array 
+
+  Method add(element)
+    If size = capacity Then
+      Call resize_array()
+    array[size] <- element 
+    size <- size + 1
+
+  Method resize_array()
+    new_capacity <- capacity * 2
+    new_array <- new array of ints of size new_capacity
+    For i <- 0 To size - 1 Do 
+      new_array[i] <- array[i]
+    End For 
+
+    array <- new_array
+    capacity <- new_capacity
+
+  Method shrink_array()
+    If size > 0 Then 
+      new_capacity <- Max(1, size) 
+      new_array <- new array of ints of size new_capacity
+      For i <- 0 To size - 1 Do 
+        new_array[i] <- array[i]
+      End For 
+
+      array <- new_array 
+      capacity <- new_capacity 
+    End If 
+
+  Method add_at(index, element)
+    If index < 0 Or index > size Then 
+      Return "Index out of bounds"
+    End If 
+
+    If size = capacity Then 
+      Call resize_array()
+
+    For i <- size - 1 DownTo index Do 
+      array[i + 1] <- array[i]
+    End For 
+
+    array[index] <- element 
+    size <- size + 1 
+
+  Method remove()
+    If size > 0 Then 
+      array[size - 1] <- NULL // Optional: clear value      
+      size <- size - 1
+    End If 
+
+  Method remove_at(index)
+    If index < 0 Or index >= size Then 
+      Return "Index out of bounds"
+    End If 
+
+    For i <- index To size - 2 Do 
+      array[i] <- array[i + 1]
+    End For 
+
+    array[size - 1] <- NULL // Optional: clear value
+    size <- size - 1 
+
+  Method get_element(index) 
+    If index < 0 Or index >= size Then 
+      Return "Index out of bounds"
+    End If
+    
+    Return array[index] 
+
+  Method set_element(index, element)
+    If index < 0 Or index >= size Then 
+      Return "Index out of bounds"
+    End If
+
+    array[index] <- element
+
+  Method get_size()
+    Return size 
+
+  Method get_capacity()
+    Return capacity
+
+  Method print_array()
+    For i <- 0 To size - 1 Do 
+      Print array[i]
+    End For 
+
+
