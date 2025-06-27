@@ -73,9 +73,9 @@ To avoid wasting space, we may shrink when the array is underused  (e.g., the si
 
 ### **Pseudocode: Dynamic Array Implementation**
 
-The full code can be found at [`dynamic-array-pseudocode`](/src/dynamic_array.pseudo) .
+The full code can be found at [`dynamic-array-pseudocode`](src/dynamic_array.pseudo) .
 
-For detailed explanation go to [`dynamic-array-pseudo-explained`](/src/dynamic_array_pseudo_explained.md) . 
+For detailed explanation go to [`dynamic-array-pseudo-explained`](src/dynamic_array_pseudo_explained.md) . 
 
 ### **Time Complexity of Operations**
 
@@ -102,4 +102,4 @@ In a dynamic array, these operations take O(N) time in the worst case when inser
 
 - **Python Version with Error Handling**: [`dynamic-arr-in-py`](src/dynamic_arr.py)
 
-- **C Version with Proper Memory Management**: [`dynamic-arr-in-C`](/src/dynamic_arr.c)
+- **C Version with Proper Memory Management**: [`dynamic-arr-in-C`](src/dynamic_arr.c)
