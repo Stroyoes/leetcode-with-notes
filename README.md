@@ -3,7 +3,7 @@ A structured collection of LeetCode prep notes and code breakdowns. Focuses on b
 
 > I’m following the [NeetCode Roadmap 🚀](https://neetcode.io/roadmap) to systematically cover core data structures and algorithms. 
 
-> ⚠ **Work in Progress**  
+> ⚠️ **Work in Progress**  
 > This repository is still under development as I am actively learning and documenting. Expect regular updates, refactoring, and improvements. Feel free to suggest enhancements! 🤗 
 
 ---
