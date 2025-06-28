@@ -1,0 +1,59 @@
+# === PYTHON ===
+
+# Bytecode files
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+venv/
+env/
+*.egg-info/
+
+# Pytest cache
+.cache/
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# IDEs/editors
+.vscode/
+.idea/
+
+# Logs and coverage reports
+*.log
+coverage/
+htmlcov/
+*.cover
+*.py,cover
+
+# === C / GCC ===
+
+# Object files and compiled binaries
+*.o
+*.out
+*.exe
+main
+
+# Build directories
+/build/
+/bin/
+/obj/
+
+# Core dumps
+core
+*.core
+
+# === OS / MISC ===
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Backup/swap files
+*~
+*.swp
+*.bak
+*.tmp
