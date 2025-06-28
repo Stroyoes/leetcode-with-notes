@@ -18,7 +18,7 @@ A static array has a fixed capacity that is determined at compile time and canno
 
 ### **Example: Static array (in C)**
 
-```
+```c
 #include <stdio.h>
 
 int main() {
