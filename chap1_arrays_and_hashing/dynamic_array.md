@@ -1,4 +1,4 @@
-# **Arrays and Hashing**
+# **Dynamic Array**
 
 ## **What is a Dynamic Array?**
 
@@ -115,3 +115,7 @@ In a dynamic array, these operations take O(N) time in the worst case when inser
   > ./main
   > ```
   > 📁 *Make sure `main.c`, `dynamic_arr.c`, and `dynamic_arr.h` are in the same folder.*
+
+---
+
+[![Jump to Next Section](https://img.shields.io/badge/-📚%20Jump%20to%20First%20Chapter-blueviolet?style=for-the-badge)](./hashing.md)

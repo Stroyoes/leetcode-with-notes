@@ -8,5 +8,5 @@ A structured collection of LeetCode prep notes and code breakdowns. Focuses on b
 
 ---
 
-[![🚀 Jump to First Chapter](https://img.shields.io/badge/-📚%20Jump%20to%20First%20Chapter-blueviolet?style=for-the-badge)](./chap1_arrays_and_hashing/dynamic_array.md)
+[![Jump to First Chapter](https://img.shields.io/badge/-📚%20Jump%20to%20First%20Chapter-blueviolet?style=for-the-badge)](./chap1_arrays_and_hashing/dynamic_array.md)
 
