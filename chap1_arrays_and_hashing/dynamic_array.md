@@ -118,4 +118,4 @@ In a dynamic array, these operations take O(N) time in the worst case when inser
 
 ---
 
-[![Jump to Next Section](https://img.shields.io/badge/-📚%20Jump%20to%20First%20Chapter-blueviolet?style=for-the-badge)](./hashing.md)
+[![Jump to Next Section](https://img.shields.io/badge/-📚%20Jump%20to%20Next%20Section-blueviolet?style=for-the-badge)](./hashing.md)
