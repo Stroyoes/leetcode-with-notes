@@ -26,7 +26,7 @@ static int resize_if_needed(dynamic_arr_t *dynamic_arr) {
 }
 
 dynamic_arr_t *dynamic_arr_init(size_t item_size) {
-  dynamic_arr_t *dynamic_arr = malloc(sizeof(item_size));
+  dynamic_arr_t *dynamic_arr = malloc(sizeof(dynamic_arr_t));
 
   if (!dynamic_arr) {
     fprintf(stderr, "\nERROR: Failed allocating space for the dynamic arr struct!\n");
@@ -247,7 +247,7 @@ int dynamic_arr_append_at(dynamic_arr_t *dynamic_arr, size_t index, const void *
    *
    * After memmove:
    * Index:     0     1     2     3     4
-   * Data:    [10]  [??]  [20]  [30]  [40]   ← space at index 1 ready for new item
+   * Data:    [10]  [??]  [20]  [30]  [40]  <-- space at index 1 ready for new item
    */
 
   memcpy((char *)dynamic_arr->array + shift_start, input, dynamic_arr->item_size);
@@ -263,5 +263,83 @@ int dynamic_arr_append_at(dynamic_arr_t *dynamic_arr, size_t index, const void *
   dynamic_arr->arr_size++;
 
   return 0;
+}
+
+// Removes the last item from the dynamic array
+int dynamic_arr_pop(dynamic_arr_t *dynamic_arr) {
+  if (!dynamic_arr) {
+    fprintf(stderr, "\nERROR: The dynamic array wasn't initialized correctly!\n");
+    return -1;
+  } else if (dynamic_arr->arr_size == 0) {
+    fprintf(stderr, "\nERROR: There are no elements to remove!\n");
+    return -1;
+  }
+
+  dynamic_arr->arr_size--; // Just decrement the size
+  return 0;
+}
+
+// Removes the item at the specified index, shifting elements as needed
+int dynamic_arr_remove_at(dynamic_arr_t *dynamic_arr, size_t index) {
+  if (!dynamic_arr) {
+    fprintf(stderr, "\nERROR: The dynamic array wasn't initialized correctly!\n");
+    return -1;
+  } else if (index >= dynamic_arr->arr_size) { 
+    fprintf(stderr, "\nERROR: Index out of bounds!\n");
+    return -1;
+  }
+
+  size_t memory_offset = index * dynamic_arr->item_size; // Byte offset of the element to remove
+  size_t move_size = (dynamic_arr->arr_size - index - 1) * dynamic_arr->item_size; // Shift only elements after the removed one
+
+  // Example: removing index 1 from [10, 20, 30, 40]
+  // move_size = (4 - 1 - 1) * size = 2 * size => shifts [30, 40] left to fill the gap
+  
+  memmove(
+    (char *)dynamic_arr->array + memory_offset, // Destination: start byte
+    (char *)dynamic_arr->array + memory_offset + dynamic_arr->item_size, // Source: trailing elements total byte
+    move_size // Shift trailing elements left
+  );
+
+  dynamic_arr->arr_size--;
+
+  return 0;
+}
+
+// Returns the current number of elements in the dynamic array
+size_t dynamic_arr_get_size(dynamic_arr_t *dynamic_arr) {
+  return dynamic_arr ? dynamic_arr->arr_size : 0;
+}
+
+// Returns the current allocated capacity of the dynamic array
+size_t dynamic_arr_get_capacity(dynamic_arr_t *dynamic_arr) {
+  return dynamic_arr ? dynamic_arr->capacity : 0;
+}
+
+// Displays all elements in the array using the provided print function.
+void dynamic_arr_display(dynamic_arr_t *dynamic_arr, void (*print_func)(const void *item)) {
+  if (!dynamic_arr) {
+    fprintf(stderr, "\nERROR: The dynamic array wasn't initialized correctly!\n");
+  } else if (!print_func) {
+    fprintf(stderr, "\nERROR: No print_func specified!\n");
+  }
+
+  printf(" [");
+  for (size_t i = 0; i < dynamic_arr->arr_size; i++) {
+    print_func((char *)dynamic_arr->array + i * dynamic_arr->item_size);
+    if (i != (dynamic_arr->arr_size - 1)) {
+      printf(" ,");
+    }
+  }
+
+  printf(" ]\n");
+}
+
+// Frees all allocated memory used by the dynamic array
+void dynamic_arr_dispose(dynamic_arr_t *dynamic_arr) {
+  if (dynamic_arr) {
+    free(dynamic_arr->array);
+    free(dynamic_arr);
+  }
 }
 

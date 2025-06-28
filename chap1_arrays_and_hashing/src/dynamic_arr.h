@@ -30,7 +30,7 @@ int dynamic_arr_append(dynamic_arr_t *dynamic_arr, const void *input);
  */
 int dynamic_arr_append_at(dynamic_arr_t *dynamic_arr, size_t index, const void *input);
 
-int dynamic_arr_remove(dynamic_arr_t *dynamic_arr);
+int dynamic_arr_pop(dynamic_arr_t *dynamic_arr);
 int dynamic_arr_remove_at(dynamic_arr_t *dynamic_arr, size_t index);
 
 size_t dynamic_arr_get_size(dynamic_arr_t *dynamic_arr);

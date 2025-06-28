@@ -100,6 +100,18 @@ In a dynamic array, these operations take O(N) time in the worst case when inser
 
 ### **Implementations in _C_ and _python_**
 
-- **Python Version with Error Handling**: [`dynamic-arr-in-py`](src/dynamic_arr.py)
+- **Python Version with Error Handling**: [`dynamic-arr-in-py`](src/dynamic_arr.py)  
+  > 🚀 Run it using:  
+  > ```bash
+  > python3 main.py
+  > ```
+  > 📁 *Make sure `main.py` and `dynamic_arr.py` are in the same folder.*
 
-- **C Version with Proper Memory Management**: [`dynamic-arr-in-C`](src/dynamic_arr.c)
+
+- **C Version with Proper Memory Management**: [`dynamic-arr-in-C`](src/dynamic_arr.c)  
+  > 🚀 Compile and run using:  
+  > ```bash
+  > gcc -o main main.c dynamic_arr.c
+  > ./main
+  > ```
+  > 📁 *Make sure `main.c`, `dynamic_arr.c`, and `dynamic_arr.h` are in the same folder.*
