@@ -118,4 +118,30 @@ In a dynamic array, these operations take O(N) time in the worst case when inser
 
 ---
 
-[![Jump to Next Section](https://img.shields.io/badge/-📚%20Jump%20to%20Next%20Section-blueviolet?style=for-the-badge)](./hashing.md)
+### <ins>**Quick Recap**</ins>
+
+![Dynamic_array](https://github.com/user-attachments/assets/cc2185df-6f87-4e2a-af19-b3950aa8e845)
+
+---
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <a href="../README.md">
+        <img src="https://img.shields.io/badge/-📚%20Jump%20to%20Prev%20Chapter-blueviolet?style=for-the-badge" alt="Jump to Prev Chapter">
+      </a>
+    </td>
+    <td>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </td>
+    <td align="center">
+      <a href="./hashing.md">
+        <img src="https://img.shields.io/badge/-📚%20Jump%20to%20Next%20Section-blueviolet?style=for-the-badge" alt="Jump to Next Section">
+      </a>
+    </td>
+  </tr>
+</table>
+
+
+
+
