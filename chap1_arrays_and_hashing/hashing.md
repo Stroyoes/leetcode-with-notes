@@ -5,7 +5,7 @@
  original data (or pointers to it) is stored. In an ideal hash table, computing the hash of a key and
  looking it up is **O(1)** time (constant time) because we compute an index and directly access that slot.  This avoids scanning the entire dataset. Mathematically, a hash function is a mapping.
 
-![hash function](https://latex.codecogs.com/png.image?\dpi{150}h:U\rightarrow\{0,1,\dots,m-1\})
+![hash function](https://latex.codecogs.com/png.image?\dpi{150}\color{white}h:U\rightarrow\{0,1,\dots,m-1\})
 
 where _**$U$**_ is the universe of keys and _**$m$**_ is the table size. 
 
