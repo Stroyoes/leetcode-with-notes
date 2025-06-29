@@ -300,6 +300,8 @@ Hash tables have pitfalls:
 
 ### <ins>**Quick Recap**</ins>
 
+![ChatGPT Image Jun 29, 2025, 11_32_40 PM](https://github.com/user-attachments/assets/4a174da7-44df-4a04-b779-5c467eb505bf)
+
 ---
 
 
