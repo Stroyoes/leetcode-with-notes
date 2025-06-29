@@ -27,18 +27,18 @@ This trivial hash maps "apple" and "ant" both to 0, showing poor distribution. A
 
 where $m$ (often prime) is the table size. For strings, one can use polynomial hashing: convert characters to integer values $s_i$ and compute
 
-![hash function](https://latex.codecogs.com/png.image?\dpi{150}\color{white}h(s)=(s_0\cdot a^{n-1}+s_1\cdot a^{n-2}+\cdots+s_{n-1})\bmod{m})
+![hash function](https://latex.codecogs.com/png.image?\dpi{150}&space;\color{white}h(s)=(s_0\cdot&space;a^{n-1}+s_1\cdot&space;a^{n-2}+\cdots+s_{n-1})\bmod{m})
 
 where $a$ is a constant base (like 31). For example, the word "cat" can be hashed by summing its ASCII values (99+97+116) and taking the remainder: if $m=10$, $(99+97+116)\bmod 10 = 2$. Adding positional weights (e.g., multiply by powers of $a$) spreads anagrams into different hashes.
 
 There are more practical methods like: 
 
-- The folding method splits a numeric key into chunks, sums them, and mods by $m$ (e.g., phone number 436-555-4601 split into 43,65,55,46,01 gives sum 210, hash $210\bmod11=1$).
+- The **folding** method splits a numeric key into chunks, sums them, and mods by $m$ (e.g., phone number 436-555-4601 split into 43,65,55,46,01 gives sum 210, hash $210\bmod11=1$).
 
-- The mid-square method squares the key and takes middle digits (e.g., 44²=1936, middle “93”, then $93\bmod11=5$).
+- The **mid-square** method squares the key and takes middle digits (e.g., 44²=1936, middle “93”, then $93\bmod11=5$).
 
 In all cases, a final modulo ensures the index is in range. 
 
-Keep hash functions simple: an overly complex hash may cost more time than it saves in search (slowing down the overall process).
+> Keep hash functions simple: an overly complex hash may cost more time than it saves in search (slowing down the overall process).
 
 ## **Collisions and the Pigeonhole Principle**
