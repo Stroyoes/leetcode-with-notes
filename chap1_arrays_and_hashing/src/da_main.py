@@ -1,3 +1,5 @@
+# Rename to main.py
+
 from dynamic_arr import DynamicArray
 
 arr = DynamicArray()

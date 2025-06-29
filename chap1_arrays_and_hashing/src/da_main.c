@@ -1,3 +1,5 @@
+// Rename this file to main.c
+
 #include <stdio.h>
 
 #include "dynamic_arr.h"
