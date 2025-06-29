@@ -279,3 +279,42 @@ Hash tables have pitfalls:
 > A well-chosen hash function and resizing policy yield **lightning-fast lookups**.
 > Otherwise, performance can collapse under collisions or high load.
 
+## **Implementations in _C_ and _Python_**
+
+- **Python Version with Separate Chaining**: [`table.py`](src/table.py)  
+  > 🚀 Run it using:  
+  > ```bash
+  > python3 main.py
+  > ```  
+  > 📁 *Make sure `main.py` and `table.py` are in the same folder.*
+
+- **C Version with Separate Chaining**: [`table.h`, `table.c`, and `main.c`](src/)  
+  > 🚀 Compile and run using:  
+  > ```bash
+  > gcc -o main main.c table.c
+  > ./main
+  > ```  
+  > 📁 *Make sure `table.h`, `table.c`, and `main.c` are in the same folder.*
+
+---
+
+### <ins>**Quick Recap**</ins>
+
+---
+
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <a href="../README.md">
+        <img src="https://img.shields.io/badge/-📚%20Jump%20to%20Prev%20Chapter-blueviolet?style=for-the-badge" alt="Jump to Prev Chapter">
+      </a>
+    </td>
+    <td align="center">
+      <a href="./hashing.md">
+        <img src="https://img.shields.io/badge/-📚%20Jump%20to%20Next%20Section-blueviolet?style=for-the-badge" alt="Jump to Next Section">
+      </a>
+    </td>
+  </tr>
+</table>
+
