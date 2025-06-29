@@ -288,7 +288,7 @@ Hash tables have pitfalls:
   > ```  
   > 📁 *Make sure `main.py` and `table.py` are in the same folder.*
 
-- **C Version with Separate Chaining**: [`table.h`, `table.c`, and `main.c`](src/)  
+- **C Version with Separate Chaining**: [`table.h`, `table.c`, and `main.c`](src/) (For the explanation of the C code head to [**`here`**](src/ht_in_C_explained.md))
   > 🚀 Compile and run using:  
   > ```bash
   > gcc -o main main.c table.c
