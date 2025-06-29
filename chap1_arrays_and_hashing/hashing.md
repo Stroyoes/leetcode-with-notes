@@ -306,12 +306,12 @@ Hash tables have pitfalls:
 <table align="center">
   <tr>
     <td align="center">
-      <a href="../README.md">
-        <img src="https://img.shields.io/badge/-📚%20Jump%20to%20Prev%20Chapter-blueviolet?style=for-the-badge" alt="Jump to Prev Chapter">
+      <a href="dynamic_array.md">
+        <img src="https://img.shields.io/badge/-📚%20Jump%20to%20Prev%20Section-blueviolet?style=for-the-badge" alt="Jump to Prev Section">
       </a>
     </td>
     <td align="center">
-      <a href="./hashing.md">
+      <a href="prefix_sum.md">
         <img src="https://img.shields.io/badge/-📚%20Jump%20to%20Next%20Section-blueviolet?style=for-the-badge" alt="Jump to Next Section">
       </a>
     </td>
